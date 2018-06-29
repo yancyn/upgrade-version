@@ -12,6 +12,7 @@ while( ($line = $file.ReadLine()) -ne $null) {
 	if($words.Count -gt 0) {
 		foreach($w in $words) {
 			$global:version += $w;
+			break;
 		}
 		break;
 	}
